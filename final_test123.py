@@ -73,9 +73,16 @@ def main():
     # creating a button for Prediction
     
     if st.button('Network Intrusion Detection Result'):
-        Intrusion = network_intrusion(input_data)
+        #Intrusion = network_intrusion(input_data)
+        try:
+            Intrusion = network_intrusion(input_data)
+        except Exception:
+            st.error("Enter correct values")
     #print(Intrusion)
-    st.success(Intrusion)
+    if Intrusion=="✅ This Network is safe to use ✅":
+        st.success(Intrusion)
+    else:
+        st.error(Intrusion)
     
     
     
