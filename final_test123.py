@@ -42,16 +42,16 @@ def network_intrusion(input_data1):
     #print(prediction)
 
     if (prediction[0] == 1):
-      return '✅ Network is safe to use ✅'
+      return '✅ This Network is safe to use ✅'
     else:
-      return ' ❌ Network is not Safe ❌ '
+      return ' ❌ This Network is not Safe ❌ '
   
   
 def main():
     
     
     # giving a title
-    st.title('NETWORK INTRUSION DETECTION')
+    st.title('NETWORK INTRUSION DETECTION SYSTEM')
     
     
     # getting the input data from the user
