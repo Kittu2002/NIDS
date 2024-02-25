@@ -42,9 +42,9 @@ def network_intrusion(input_data1):
     #print(prediction)
 
     if (prediction[0] == 1):
-      return '✅ This Network is safe to use ✅'
+      return '✅ Safe: No suspicious activity detected. Network is secure. ✅'
     else:
-      return ' ❌ This Network is not Safe ❌ '
+      return ' ❌Warning: Anomaly detected in network traffic patterns. Unusual activity detected, potentially indicating a security breach. Please investigate immediately to mitigate potential risks and secure the network. ❌ '
   
   
 def main():
@@ -79,7 +79,7 @@ def main():
         except Exception:
             st.error("Enter correct values")
     #print(Intrusion)
-    if Intrusion=="✅ This Network is safe to use ✅":
+    if Intrusion=="✅ Safe: No suspicious activity detected. Network is secure. ✅":
         st.success(Intrusion)
     else:
         st.error(Intrusion)
