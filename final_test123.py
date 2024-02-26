@@ -79,10 +79,10 @@ def main():
         except Exception:
             st.error("Enter correct values")
     #print(Intrusion)
-    if Intrusion=="✅ Safe: No suspicious activity detected. Network is secure. ✅":
-        st.success(Intrusion)
-    else:
-        st.error(Intrusion)
+        if Intrusion=="✅ Safe: No suspicious activity detected. Network is secure. ✅":
+            st.success(Intrusion)
+        else:
+            st.error(Intrusion)
     
     
     
