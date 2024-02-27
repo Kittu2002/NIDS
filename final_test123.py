@@ -51,7 +51,8 @@ def main():
     
     
     # giving a title
-    st.title('NETWORK INTRUSION DETECTION SYSTEM')
+    #st.title('NETWORK INTRUSION DETECTION SYSTEM')
+    st.markdown("<h1 style='text-align: center; color: black;'>NETWORK INTRUSION DETECTION SYSTEM</h1>", unsafe_allow_html=True)
     
     
     # getting the input data from the user
